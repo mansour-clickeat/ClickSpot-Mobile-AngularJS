@@ -1,0 +1,182 @@
+/*=========*/
+ /*GLOBAL*/
+/*=========*/
+$myGreen: #22c064;
+$myBlue: #1349a1;
+$myRed: #bf503d;
+$myBlack: #27282d;
+
+/* SearchBox */
+
+#searchBox
+{
+    width: 100vw;  
+    height: 5vh;
+    background-color: $myBlack;
+    padding: 8px;
+
+    .left-inner-addon { position: relative;}
+    .left-inner-addon input { padding-left: 30px;}
+    .left-inner-addon i 
+    {
+      position: absolute;
+      margin:0.3vh 0vw 0vh 0.5vw; 
+      pointer-events: none;
+    }
+
+    i.fa 
+    {
+      font-size: 20px;
+      color: $myBlack;
+      border-right:1px solid rgba(39, 40, 45, 0.3);
+      padding: 0px 10px 0px 0px;
+     
+    }
+    #searchBar 
+    {
+      width: 85vw;
+      text-align: center;
+    }
+    #searchButton
+    {
+      color:white;
+      font-size: 17px;
+      width: 10vw;
+      text-align: center;
+      position: absolute;
+      right: 2.5vw;
+      top: 1.2vh; 
+    }
+}
+/* End SearchBox */
+
+/* mapBox */
+#mapBox
+{
+  border:1px solid $myBlack;
+}
+#map {
+    height:42vh;
+    width:100vw;
+}
+.infoWindowContent {
+    font-size:  14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+h2 {
+    margin-bottom:0;
+    margin-top: 0;
+}
+/* End mapBox */
+
+/* Info Box */
+#infoBox
+{ 
+  #restaurantInfo
+  {
+     padding: 0vh 0vw 0vh 2vw;
+     width: 40vw;
+      p
+      {
+        text-align: center;
+      }
+       #restaurantName
+      {
+        font-weight: 700;
+        color:$myBlack;
+      }
+  }
+  
+  #timeTable
+  {
+    padding: 0vh 0vw 0vh 5vw;
+
+    width: 60vw;
+    table
+    {
+      width: 50vw;
+      color:$myBlack;
+
+      caption 
+      {
+        color:black;
+        font-weight: bold;
+      }
+    }
+  }
+  #gallery
+  {
+    padding: 0vh 0vw 0vh 1vw;
+
+    ul li
+    {
+      display:inline;
+    }
+    img
+    {
+      width: 7vw;
+    }
+  }
+  #options
+  {
+    width: 30vw;
+    height: 20vh;
+    position: absolute;
+    right: 10vw;
+    bottom:15vh;
+    text-align: center;
+    
+    ul li {list-style-type: none;}
+
+    #legend
+    {
+      padding: 0;
+      text-align: left;
+      li
+      {
+        font-size: 10px;
+        width:100%;
+        img {width: 2vw;}
+      }
+
+      img
+      {
+        width: 3vw;
+      }
+    }
+    #buttons
+    {
+      padding: 0;
+      color:white;
+      li
+      {
+        padding:0.6vh 0vw 0.6vh 0vw;
+        margin:1vh 0vw 1vh 0vw;
+        border-radius: 25px;
+      }
+      li:nth-child(1)
+      {
+        background-color:$myGreen;
+      }
+      li:nth-child(2)
+      {
+        background-color:$myBlue;
+      }
+      li:nth-child(3)
+      {
+        background-color:$myRed;
+      }
+    }
+  }
+  #addRestaurant
+  {
+    width: 100vw;
+    height: 4.5vh;
+    background-color: $myGreen;
+    text-align: center;
+    color:white;
+    padding: 1vh 0vw 1vh 0vw;
+  }
+}
+/* End Info Box*/

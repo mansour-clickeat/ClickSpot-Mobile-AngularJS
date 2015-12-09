@@ -1,0 +1,38 @@
+<div class="logoBox">
+	<img src="images/logo_login_page.png" alt="">
+</div><!-- logoBox -->
+<br/>
+
+
+
+
+<div id="addRestaurantBox_p2" ng-controller="AddRestaurantCtrl">
+  	
+  	<span>Type de Restaurant:</span>
+	<br/>
+	  <ul>
+	    <li ng-repeat="option in typeofRestaurant">
+	    	<div id="ck-button">
+   				<label>
+	        		<input type="checkbox" name="checkbox-Restaurant"ng-model="option.checked" ng-click="updateSelection($index, typeofRestaurant)" />
+	       				 <span>{{option.name}}</span>
+	       	 	</label>
+			</div>
+	     </li>
+	  </ul>
+
+</div><!-- AddRestaurantBox -->
+
+
+<script>
+$('input[name="checkbox-Restaurant"]').bootstrapSwitch('setDisabled', true, true);
+</script>
+
+
+<br/>
+
+ <div id="navigation">
+		<i class="fa fa-chevron-left" ng-click="addRestaurant(1)"></i>
+		<span>2 / 4</span>
+		<i class="fa fa-chevron-right" ng-click="addRestaurant(3)"></i>
+</div><!-- navigation -->

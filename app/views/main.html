@@ -1,0 +1,83 @@
+
+<div id="searchBox">
+    <div class="left-inner-addon">
+        <i class="fa fa-list-ul"></i>
+        <input id="searchBar" type="text" ng-model="inputAddress" placeholder=" Rechercher Adresse" />
+    </div>
+    <div id="searchButton" ngclick="search(inputAddress)">Chercher</div>
+</div><!-- searchBox -->
+
+<div id="mapBox">
+    <div ng-controller="MainCtrl">
+        <div id="map"></div>
+    </div>
+</div><!-- mapBox -->
+
+<div id="infoBox">
+    <div id="restaurantInfo">
+        <p>
+            <br/>
+            <span id="restaurantName">GALLIKA</span><br/>
+            <span id="restaurantAddress">
+                7 rue Godot de Mauroy<br/>
+                    75009 Paris
+            </span>
+        </p>
+    </div>
+    <div id="timeTable">
+         <table>
+            <caption>Horaire:</caption>
+          <tr>
+            <td>Lundi</td>
+            <td>11:45&nbsp; - &nbsp;15:00</td>
+          </tr>
+          <tr>
+            <td>Mardi</td>
+            <td>11:45&nbsp; - &nbsp;15:00</td>
+          </tr>
+          <tr>
+            <td>Mercredi</td>
+            <td>11:45&nbsp; - &nbsp;15:00</td>
+          </tr>
+          <tr>
+            <td>Jeudi</td>
+            <td>11:45&nbsp; - &nbsp;15:00</td>
+          </tr>
+          <tr>
+            <td>Vendredi</td>
+            <td>11:45&nbsp; - &nbsp;15:00</td>
+          </tr>
+          <tr>
+            <td>Samedi</td>
+            <td>11:45&nbsp; - &nbsp;15:00</td>
+          </tr>
+          <tr>
+            <td>Dimanche</td>
+            <td>11:45&nbsp; - &nbsp;15:00</td>
+          </tr>
+        </table> 
+    </div>
+    <br/>
+    <div id="gallery">
+        <ul>
+            <li><img src="images/tmp1.png" alt=""></li>
+            <li><img src="images/tmp2.png" alt=""></li>
+            <li><img src="images/tmp3.png" alt=""></li>
+            <li><img src="images/tmp1.png" alt=""></li>
+        </ul>
+    </div>
+    <div id="options">
+        <ul id="legend">
+            <li><img src="images/green-marker.png" alt="">: mise à jour effectuée</li>
+            <li><img src="images/red-marker.png" alt="">: mise à jour non effectuée</li>
+        </ul>
+        <ul id="buttons">
+            <li>Valider</li>
+            <li>Modifier</li>
+            <li>Suprimer</li>
+        </ul>
+    </div>
+    <div id="addRestaurant" ng-click="addRestaurant(1)">AJOUTER UN RESTAURANT</div>
+</div><!-- infoBox -->
+
+

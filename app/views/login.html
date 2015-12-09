@@ -1,0 +1,24 @@
+<div class="logoBox">
+	<img src="images/logo_login_page.png" alt="">
+</div><!-- logoBox -->
+
+<br/>
+
+<div id="loginBox" ng-controller="LoginCtrl">
+  
+  <form>
+    <span>Mail :</span><br/>
+    <input type="text" ng-model="restaurant.address" placeholder="Mail"/><br/>
+    
+    <span>Mot de passe :</span><br/>
+    <input type="email" ng-model="restaurant.mail" placeholder="Mot de passe"/><br/><br/>
+  	
+  	<input id="submitButton" type="submit" ng-click="login(user)" value="Se Connecter" />
+  </form>
+  <!-- <pre>username = "{{user.name}}"</pre>
+  <pre>userdata = "{{user.password}}"</pre>
+  -->
+ </div><!-- loginBox -->
+
+
+
